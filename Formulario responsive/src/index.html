@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen font-poppins lg:pt-[5%] xl:pt-[3%] 2xl:pt-[2%] ">
+  <section class="md:grid md:grid-cols-[2fr_3fr] lg:grid-cols-[1fr_1fr] max-w-screen-lg mx-auto lg:items-center lg:justify-center">
+    <div class=" h-full bg-laptop-image  bg-cover hidden md:block lg:h-[90%]">
+
+    </div>
+    <article class=" h-screen flex flex-col justify-center py-24 px-12 lg:h-[90%]">
+      <h1 class="font-bold text-3xl mb-4">Create an account</h1>
+      <p class="text-zinc-600 mb-12">Let's get Started your 30 days free trial</p>
+      <form action="">
+        <figcaption class="flex flex-col gap-3 mb-10">
+          <section class="flex flex-col">
+            <label for="name" class="text-lg">Name</label>
+            <input type="text" name="name" id="name" class="border-b border-black outline-none pl-2 py-2 font-extralight">
+          </section>
+          <section class="flex flex-col ">
+            <label for="email" class="text-lg">Email</label>
+            <input type="email" name="email" id="email" class="border-b border-black outline-none pl-2 py-2 font-extralight">
+          </section>
+          <section class="flex flex-col ">
+            <label for="password" class="text-lg">Password</label>
+            <input type="text" name="password" id="password" class="border-b border-black outline-none pl-2 py-2 font-extralight">
+          </section>
+        </figcaption>
+        <figcaption class="flex flex-col justify-center items-center gap-6">
+          <button class="py-4 w-full bg-black text-white font-bold rounded-[24px] border hover:border-black  hover:bg-white hover:text-black transition-colors group">Create account</button>
+          <button class="py-4 border border-black w-full flex gap-2 items-center justify-center rounded-[24px] hover:bg-black hover:text-white group transition-colors">
+            <svg  class=" group-hover:fill-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"></path></svg>
+            <p>Sign up with Google</p>
+            
+          </button>
+          <p class="text-center">Already have an account? <a href="" class="text-blue-600 hover:text-blue-900">Sign in</a></p>
+        </figcaption>
+      </form>
+    </article>
+  </section>
+</body>
+</html>

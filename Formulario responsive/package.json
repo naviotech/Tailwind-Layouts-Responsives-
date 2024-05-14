@@ -1,0 +1,16 @@
+{
+  "name": "6.-fromulario-responsive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailDev": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "EduardO Navio Maya",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
