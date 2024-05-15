@@ -10,42 +10,124 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body class="font-dm-sans flex flex-col justify-center items-center bg-color-background text-white"> 
-  <header class="px-5 py-5 w-full">
+  <header class="px-4 py-5 w-full md:px-12 md:py-12 max-w-screen-xl">
     
-    <nav class="flex justify-between items-center mb-10">
+    <nav class="flex justify-between items-center mb-10 md:justify-between md:mb-32">
       <a href="#" class="text-3xl font-bold ">Eduardo Navio.</a>
       
       <input type="checkbox" id="menu" class="peer/menu hidden">
-      <label for="menu" class="w-10 h-10 cursor-pointer bg-menu-burguer bg-cover bg-center bg-green-color rounded-lg peer-checked/menu:bg-menu-close transition all z-20"></label>
+      <label for="menu" class="w-10 h-10 cursor-pointer bg-menu-burguer bg-cover bg-center bg-green-color rounded-lg peer-checked/menu:bg-menu-close transition all z-20 md:hidden"></label>
       
       <ul class="absolute left-0 top-0 w-full h-screen bg-menu-color grid items-center justify-center content-center gap-10
-      clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-700">
+      clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-700
+      md:grid-cols-3 md:h-auto md:w-[43%] md:text-white 
+      md:clip-circle-full md:relative md:bg-transparent md:gap-2">
         <li><a href="#" class="hover:text-green-color">About me</a></li>
         <li><a href="#" class="hover:text-green-color">Services</a></li>
         <li><a href="#" class="hover:text-green-color">Contact me</a></li>
       </ul>
     </nav>
-    <section class="flex flex-col gap-10 items-center">
+    <section class="flex flex-col gap-10 items-center justify-center md:flex-row-reverse lg:justify-around">
       <figure class="">
-        <img class="aspect-square object-cover object-center rounded-full " src="./assets/man.jpg">
+        <img class="aspect-square object-cover object-center rounded-full max-w-[300px]" src="./assets/man.jpg">
       </figure>
       <article class="text-center">
-        <h1 class="text-4xl w-[95%] mb-4">Hi, I am Eduardo Navío.</h1>
-        <p class="text-gray-color">Frontend Developer</p>
-        <div class="mt-8 flex flex-auto gap-4 items-center justify-center flex-wrap">
-          <a href="#" class="py-4 min-w-[200px] w-full  bg-green-color">Download CV</a>
-          <a href="#" class="py-4 border min-w-[170px] w-full border-white">Learn More</a>
+        <h1 class="text-4xl w-[95%] mb-4 md:text-left md:text-5xl md:w-full">Hi, I am Eduardo Navío.</h1>
+        <p class="text-gray-color md:text-left md:text-[20px]">Frontend Developer</p>
+        <div class="mt-8 flex flex-col gap-4 items-center justify-center md:gap-6 md:flex-row">
+          <a href="#" class="py-4 min-w-[170px] w-full  bg-green-color hover:text-green-color hover:bg-white transition-colors duration-300">Download CV</a>
+          <a href="#" class="py-4 border min-w-[170px] w-full border-white hover:bg-white hover:text-green-color transition-colors duration-300">Learn More</a>
         </div>
       </article>
     </section>
   </header>
   <main>
-    <section>
-      <h2>About me</h2>
+    <section class="px-5 py-5 w-full flex flex-col justify-center items-center md:px-12 md:py-12 md:mb-10 max-w-screen-xl">
+      <h2 class="mx-auto text-center text-2xl mb-6 md:text-3xl md:mb-10">About me</h2>
+      <p class="text-center text-gray-color mb-8 md:w-[70%] md:mb-14">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut vel modi nihil natus numquam aliquid ratione. Quia, sed nulla ea ipsam amet omnis, rerum unde, dolor maxime ex optio nihil.</p>
+      <section class="flex flex-col gap-10 md:flex-row md:justify-around w-full">
+        <article class="flex flex-col justify-center items-center gap-3">
+          <a href="https://github.com/Mayadevv" target="_blank" class="icon-github text-[60px] text-green-color cursor-pointer hover:text-black hover:scale-125 transition-all"></a>
+          <h3 class="text-[20px]">Github</h3>
+        </article>
+
+        <article class="flex flex-col justify-center items-center gap-3">
+          <a href="https://www.linkedin.com/in/naviomaya" target="_blank" class="icon-linkedin text-[60px] text-green-color cursor-pointer hover:text-[#0a66c2] hover:scale-125 transition-all"></a>
+          <h3 class="text-[20px]">Linkedin</h3>
+        </article>
+
+        <article class="flex flex-col justify-center items-center gap-3">
+          <a href="mailto:naviomaya@gmail.com" target="_blank" class="icon-gmail text-[60px] text-green-color cursor-pointer hover:text-red-500 hover:scale-125 transition-all"></a>
+          <h3 class="text-[20px]">Email</h3>
+        </article>
+      </section>
+    </section>
+    <section class="px-5 py-5 w-full md:px-12 md:py-12 md:mb-10 max-w-screen-xl">
+      <h2 class="text-2xl text-center mb-6 md:text-3xl md:mb-10">What i do</h2>
+      <section class="flex flex-col gap-8 md:grid md:grid-cols-2">
+        <article class="bg-card-color p-9 flex flex-col gap-4">
+          <a href="#" class="icon-react text-[60px] text-green-color hover:text-[#0a66c2]"></a>
+          <h3 class="text-[20px] text-gray-color">Web Development</h3>
+        </article>
+
+        <article class="bg-card-color p-9 flex flex-col gap-4">
+          <a href="#" class="icon-tailwind text-[60px] text-green-color hover:text-[#0a66c2]"></a>
+          <h3 class="text-[20px] text-gray-color">Web Design</h3>
+        </article>
+
+        <article class="bg-card-color p-9 flex flex-col gap-4">
+          <a href="#" class="icon-dev text-[60px] text-green-color hover:text-[#0a66c2]"></a>
+          <h3 class="text-[20px] text-gray-color">Software Development</h3>
+        </article>
+      </section>
+    </section>
+    <section class="px-5 py-5 w-full md:px-12 md:py-12 md:mb-10 max-w-screen-xl">
+      <h2 class="text-2xl text-center mb-6 md:text-3xl md:mb-10">My Skills</h2>
+      <section class="md:grid md:grid-cols-3 bg-card-color">
+        <article class="bg-card-color py-5 flex flex-col justify-center items-center gap-2">
+          <p class="text-gray-color text-3xl font-extrabold md:text-4xl">80%</p>
+          <h3 class="text-green-color text-[20px]">HTML</h3>
+        </article>
+
+        <article class="bg-card-color py-5 flex flex-col justify-center items-center gap-2">
+          <p class="text-gray-color text-3xl font-extrabold md:text-4xl">60%</p>
+          <h3 class="text-green-color text-[20px]">CSS</h3> 
+        </article>
+
+        <article class="bg-card-color py-5 flex flex-col justify-center items-center gap-2">
+          <p class="text-gray-color text-3xl font-extrabold md:text-4xl">70%</p>
+          <h3 class="text-green-color text-[20px]">JS</h3> 
+        </article>
+
+        <article class="bg-card-color py-5 flex flex-col justify-center items-center gap-2">
+          <p class="text-gray-color text-3xl font-extrabold md:text-4xl">60%</p>
+          <h3 class="text-green-color text-[20px]">TAILWIND</h3> 
+        </article>
+
+        <article class="bg-card-color py-5 flex flex-col justify-center items-center gap-2">
+          <p class="text-gray-color text-3xl font-extrabold ">50%</p>
+          <h3 class="text-green-color text-[20px]">REACT</h3> 
+        </article>
+      </section>
+    </section>
+    <section class="px-5 py-5 w-full md:px-12 md:py-12 md:mb-10 max-w-screen-xl">
+      <h2 class="text-2xl text-center mb-6 md:text-3xl md:mb-10" >Get in touch</h2>
+      <section class="max-w-2xl flex flex-col justify-center content-center mx-auto">
+        <form action="" autocomplete="off" class="text-gray-color flex flex-col justify-center items-center">
+          <figcaption class="w-full flex flex-col gap-5">
+  
+            <input type="text" id="name" placeholder="Name" class="py-3 px-2 input-focus">
+            <input type="email" autocomplete="off" id="email" placeholder="Email" class="py-3 px-2 input-focus">
+            
+            <textarea name="area" id="area" placeholder="Message" class="w-full bg-color-background border border-gray-color py-3 px-2 outline-none focus:border-green-color min-h-12"></textarea>
+          </figcaption>
+          <button class="mx-auto py-3 px-12 bg-green-color text-white mt-8 hover:bg-white hover:text-green-color transition-all duration-300">Contact me</button>
+        </form>
+      </section>
     </section>
   </main>
-  <footer>
-    @copy Eduardo Navío Maya 2024
+  <footer class="md:px-12 md:py-12 md:mb-10 max-w-screen-xl">
+    <p class="text-center text-gray-color">&copy Eduardo Navío Maya 2024</p>
   </footer>
 </body>
 </html>

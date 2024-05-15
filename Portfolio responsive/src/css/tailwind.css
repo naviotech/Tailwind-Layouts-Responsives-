@@ -16,7 +16,13 @@
   .clip-circle-full{
       clip-path: circle(150% at top right);
   }
+
+  .input-focus{
+    @apply border-x-transparent border-t-transparent outline-none border-b border-b-gray-color bg-color-background border focus:bg-color-background focus:ring-1 focus:ring-green-color;
+  }
 }
+
+
 
 @font-face {
   font-family: 'icomoon';
