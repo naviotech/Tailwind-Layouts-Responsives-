@@ -1,4 +1,5 @@
 # Tailwind-Layouts-Responsives-
+<img src="https://github.com/naviotech/Tailwind-Layouts-Responsives-/blob/main/banner.png">
 Este repositorio contiene un conjunto de proyectos diseñados para poner en práctica las bases del estilado con Tailwind CSS, su configuración y su uso. 
 Cada proyecto está desarrollado con un enfoque en la creación de interfaces responsivas, asegurando que sean accesibles y visualmente atractivas en diferentes dispositivos y tamaños de pantalla.
 
