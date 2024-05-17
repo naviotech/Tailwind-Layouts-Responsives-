@@ -4,10 +4,23 @@ Cada proyecto está desarrollado con un enfoque en la creación de interfaces re
 
 ## Instalación
   1. Clona el repositorio en local
+    <div>
+       <img src="https://github.com/naviotech/Tailwind-Layouts-Responsives-/blob/main/comando1.png">
+    </div>
+    
   2. Navega al repositorio
+     <div>
+     <img src="https://github.com/naviotech/Tailwind-Layouts-Responsives-/blob/main/comando2.png">
+      </div>
   3. Asegúrate de tener Node.js instalado. Luego, ejecuta: npm install
+     <div>
+     <img src="https://github.com/naviotech/Tailwind-Layouts-Responsives-/blob/main/comando3.png">
+      </div>
   4. Ejecuta el siguiente comando para compilar los archivos CSS utilizando Tailwind CSS: npm run tailDev (si quieres hacer cambios en el proyecto)
-  5. Navega al directorio src y abre el archivo index.html en tu navegador para ver el proyecto en acción (puedes utilizar Live Server para una mejor experiencia).
+     <div>
+     <img src="https://github.com/naviotech/Tailwind-Layouts-Responsives-/blob/main/Comando4.png">
+      </div>
+  7. Navega al directorio src y abre el archivo index.html en tu navegador para ver el proyecto en acción (puedes utilizar Live Server para una mejor experiencia).
 
 ## Tecnologías Utilizadas
 
